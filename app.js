@@ -15,4 +15,8 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use('/student',require('./routes/studentR'));
 
+app.get("/", (req, res) =>
+  res.send("Hello Wolrd!")
+);
+
 app.listen(5000);
