@@ -10,6 +10,10 @@ const students = db.define(
             primaryKey: true,
             autoIncrement: true
         },
+        stu_no: {
+            type: Sequelize.STRING,
+            AllowNull: false
+        },
         name: {
             type: Sequelize.STRING,
             AllowNull: false
